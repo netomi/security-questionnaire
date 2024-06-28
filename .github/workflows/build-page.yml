@@ -19,8 +19,18 @@ jobs:
       url: ${{ steps.qwik-build.outputs.page-url }}
 
     steps:
-    - name: Qwik Build
-      id: qwik-build
-      uses: danielbayley/qwik-build@v1.0.0
+    - name: Setup Node.js for use with actions
+      uses: actions/setup-node@v1
       with:
-        working-dir: web
+        node-version: 16
+
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v2.5.0
+
+    - name: Clean install dependencies
+      working-directory: web
+      run: npm ci
+
+    - name: Build app
+      working-directory: web
+      run: npm run build && npm run build.ssg && npm run ssg
