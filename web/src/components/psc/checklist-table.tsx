@@ -1,5 +1,5 @@
 import { $, component$, useStore, useSignal } from "@builder.io/qwik";
-import { useCSSTransition } from "qwik-transition";
+//import { useCSSTransition } from "qwik-transition";
 
 import Icon from "~/components/core/icon";
 import type { Priority, Section, Checklist } from '../../types/PSC';
@@ -11,7 +11,7 @@ export default component$((props: { section: Section }) => {
 
   const [completed, setCompleted] = useLocalStorage('PSC_PROGRESS', {});
 
-  const showFilters = useSignal(false);
+  //const showFilters = useSignal(false);
   //const { stage } = useCSSTransition(showFilters, { timeout: 300 });
 
   const sortState = useStore({ column: '', ascending: true });
