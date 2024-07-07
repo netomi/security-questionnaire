@@ -126,7 +126,14 @@ If you've found this repository helpful, consider sponsoring me on GitHub if you
         <a href="https://github.com/trevorwinsereclipse">
             <img src="https://avatars.githubusercontent.com/u/172429499?v=4" width="80;" alt="trevorwinsereclipse"/>
             <br />
-            <sub><b>trevorwinsereclipse</b></sub>
+            <sub><b>Trevorwinsereclipse</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/liss-bot">
+            <img src="https://avatars.githubusercontent.com/u/87835202?v=4" width="80;" alt="liss-bot"/>
+            <br />
+            <sub><b>Alicia Bot</b></sub>
         </a>
     </td></tr>
 </table>
